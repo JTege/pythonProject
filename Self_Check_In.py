@@ -47,9 +47,9 @@ else:
 
 weight = float(input('weight: '))
 unit = input('(K)g or (L)bs: ')
-if unit.upper() == 'K':  # case-sensitive language
+if unit.upper() == 'K':  # case-sensitive language - requires fix
     converted = weight / 2.20
-    print('weight in Lbs: ' + str(round(converted, 4)))
+    print('weight in Lbs: ' + str(int(round(converted, 4))))
 else:
     converted = weight * 2.20
-    print('Weight in Kgs: ' + str(round(converted, 4)))
+    print('Weight in Kgs: ' + str(int(round(converted, 4))))
