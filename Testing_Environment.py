@@ -16,17 +16,17 @@ print(i*150)
 
 # while loop
 
-secret_number = 10
+answer = 'London'
 guess_count = 0
 guess_limit = 3
 while guess_count < guess_limit:
-    guess = int(input('Guess: '))
+    guess = str(input('What is the capital city of United Kingdom: '))
     guess_count += 1
-    if guess == secret_number:
-        print('Win')
+    if guess == answer:
+        print('Correct')
         break
 else:
-    print('fail')  # End of while loop
+    print('Incorrect')  # End of while loop
 
 i = '*'
 print(i*150)
