@@ -17,12 +17,12 @@ print(i*150)
 # while loop
 
 answer = 'London'
-guess_count = 0
-guess_limit = 3
-while guess_count < guess_limit:
-    guess = str(input('What is the capital city of United Kingdom: '))
-    guess_count += 1
-    if guess == answer:
+attempt_count = 0
+attempt_limit = 3
+while attempt_count < attempt_limit:
+    question = str(input('What is the capital city of United Kingdom: '))
+    attempt_count += 1
+    if question == answer:
         print('Correct')
         break
 else:
